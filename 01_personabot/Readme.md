@@ -80,7 +80,7 @@ OPENAI_API_KEY=your_api_key_here
 Want to swap out Hitesh for another tech creator? Just update the:
 
 ```
-System_Prompt inside persona.py
+Persona_Prompt inside Persona_Prompt.py
 ```
 
 ---
