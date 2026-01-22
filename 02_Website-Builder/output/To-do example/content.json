@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "headline": "Stay Organized, Stay Productive",
+    "subheadline": "Transform your tasks into achievements with our intuitive to-do app.",
+    "cta_primary": "Get Started for Free",
+    "cta_secondary": "Learn More"
+  },
+  "about": {
+    "title": "About Our To-Do App",
+    "description": "In today's fast-paced world, staying organized is crucial for success. Our to-do app is designed to help individuals and teams streamline their tasks and enhance productivity. With a user-friendly interface and powerful features, you can prioritize your workload, set deadlines, and track your progress effortlessly.\n\nWhether you're managing personal projects or collaborating with colleagues, our app adapts to your needs. Join thousands of satisfied users who have transformed their productivity and made task management a breeze."
+  },
+  "features": [
+    {
+      "title": "Task Prioritization",
+      "description": "Easily prioritize your tasks with a simple drag-and-drop interface, ensuring that you focus on what matters most.",
+      "icon": "priority_high"
+    },
+    {
+      "title": "Collaboration Tools",
+      "description": "Invite team members to work on shared projects, assign tasks, and communicate seamlessly within the app.",
+      "icon": "group"
+    },
+    {
+      "title": "Custom Reminders",
+      "description": "Never miss a deadline with customizable reminders that keep you on track and accountable.",
+      "icon": "alarm"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "This app has completely changed the way I manage my tasks. I feel more organized than ever!",
+      "author": "Sarah Johnson",
+      "role": "Project Manager, Tech Solutions Inc."
+    },
+    {
+      "quote": "The collaboration features have made working with my team so much easier. Highly recommend!",
+      "author": "Michael Smith",
+      "role": "Team Lead, Creative Agency"
+    }
+  ],
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Have questions or feedback? We'd love to hear from you! Reach out to us and let\u2019s connect."
+  },
+  "footer": {
+    "tagline": "Your tasks, streamlined.",
+    "copyright": "\u00a9 2023 TaskMaster App. All rights reserved."
+  }
+}

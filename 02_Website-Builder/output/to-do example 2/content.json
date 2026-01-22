@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "headline": "Stay Organized and Productive with Our To-Do App",
+    "subheadline": "Effortlessly manage your tasks and boost your productivity with our intuitive interactive platform.",
+    "cta_primary": "Get Started Now",
+    "cta_secondary": "Learn More"
+  },
+  "about": {
+    "title": "About Our To-Do Application",
+    "description": "Our interactive to-do application is designed for anyone who wants to take control of their tasks and streamline their daily activities. With a user-friendly interface built using HTML, CSS, and JavaScript, you can easily add, delete, and manage your tasks in a few clicks. Whether you're a busy professional, a student, or a homemaker, our app adapts to your needs and helps you stay organized.\n\nWe believe that staying productive should be simple and fun. Our app not only helps you keep track of your tasks but also allows you to prioritize them, set deadlines, and track your progress. Join thousands of users who have transformed their productivity with our effective to-do solution."
+  },
+  "features": [
+    {
+      "title": "Intuitive Task Management",
+      "description": "Easily add, edit, and delete tasks with a simple click. Our intuitive interface makes task management quick and hassle-free.",
+      "icon": "check-circle"
+    },
+    {
+      "title": "Deadline Reminders",
+      "description": "Never miss a deadline again! Set reminders for your tasks and get notified when it's time to take action.",
+      "icon": "bell"
+    },
+    {
+      "title": "Progress Tracking",
+      "description": "Visualize your productivity with our progress tracking feature, allowing you to see completed tasks and plan your next steps.",
+      "icon": "chart-line"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "This app has transformed the way I manage my tasks. I can finally focus on what matters!",
+      "author": "Sarah Johnson",
+      "role": "Project Manager, Tech Solutions Inc."
+    },
+    {
+      "quote": "I love how easy it is to keep track of my tasks. The reminders keep me on top of my game!",
+      "author": "Michael Lee",
+      "role": "Freelancer, Creative Designer"
+    }
+  ],
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Have questions or feedback? We'd love to hear from you! Reach out to us for support or inquiries."
+  },
+  "footer": {
+    "tagline": "Your Productivity Partner",
+    "copyright": "\u00a9 2023 Your Company Name. All rights reserved."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "theme": {
+    "mode": "dark",
+    "style": "minimal"
+  },
+  "colors": {
+    "primary": "#4A90E2",
+    "secondary": "#50E3C2",
+    "accent": "#F5A623",
+    "background": "#1C1C1E",
+    "surface": "#2C2C2E",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#E5E5EA",
+    "gradient": "linear-gradient(135deg, #4A90E2, #50E3C2)"
+  },
+  "typography": {
+    "font_heading": "Roboto",
+    "font_body": "Open Sans",
+    "heading_sizes": {
+      "h1": "4rem",
+      "h2": "2.5rem",
+      "h3": "1.75rem"
+    },
+    "body_size": "1rem",
+    "line_height": "1.6"
+  },
+  "spacing": {
+    "section_padding": "6rem",
+    "element_gap": "2rem",
+    "container_max_width": "1200px"
+  },
+  "effects": {
+    "border_radius": "12px",
+    "box_shadow": "0 10px 40px rgba(0,0,0,0.1)",
+    "glass_effect": true,
+    "animations": [
+      "fade-in",
+      "slide-up",
+      "hover-lift"
+    ]
+  },
+  "layout": {
+    "hero_style": "centered",
+    "navigation": "fixed",
+    "sections_order": [
+      "hero",
+      "features",
+      "about",
+      "testimonials",
+      "contact",
+      "footer"
+    ]
+  }
+}

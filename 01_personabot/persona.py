@@ -11,12 +11,19 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 chat = client.chats.create(model="gemini-2.0-flash", config=types.GenerateContentConfig(
         system_instruction = Persona_Prompt,))
 
-response = chat.send_message("Hello",)
-response = chat.send_message("Tell me about yourself",)
-response = chat.send_message("What will you help me with",)
-response = chat.send_message("What was my first question",)
+def generate_response():
+    question = input("Ask a question or type 'end chat' to exit: ")
+    if question != "end chat":
+        response = chat.send_message(question)
 
 
-for message in chat.get_history():
-    print(f'role - {message.role}',end=": ")
-    print(message.parts[0].text)
+        for message in chat.get_history():
+                print(f'role - {message.role}',end=": ")
+                print(message.parts[0].text)
+        
+        generate_response()
+
+    else:
+        print("Chat ended.")
+    
+generate_response()

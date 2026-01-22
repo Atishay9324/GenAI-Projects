@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TaskMaster App - Transform your tasks into achievements with our intuitive to-do app. Stay organized and boost your productivity.">
+    <meta property="og:title" content="TaskMaster App">
+    <meta property="og:description" content="Transform your tasks into achievements with our intuitive to-do app. Stay organized and boost your productivity.">
+    <meta property="og:image" content="link_to_image.jpg">
+    <meta property="og:url" content="https://taskmasterapp.com">
+    <title>TaskMaster App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #50E3C2;
+            --accent-color: #F5A623;
+            --background-color: #1C1C1E;
+            --surface-color: #2C2C2E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #E5E5EA;
+            --gradient: linear-gradient(135deg, #4A90E2, #50E3C2);
+            --font-heading: 'Roboto', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            --section-padding: 6rem;
+            --element-gap: 2rem;
+            --container-max-width: 1200px;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--background-color);
+            color: var(--text-primary);
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(28, 28, 30, 0.8);
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: var(--section-padding);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin: var(--element-gap) 0;
+            animation: fadeIn 0.5s ease-in-out 0.2s;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            animation: fadeIn 0.5s ease-in-out 0.4s;
+        }
+
+        .cta-buttons a {
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            background-color: var(--primary-color);
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-buttons a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        section {
+            padding: var(--section-padding) 0;
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            margin-bottom: var(--element-gap);
+        }
+
+        .features, .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--element-gap);
+        }
+
+        .feature, .testimonial {
+            background: var(--surface-color);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s;
+        }
+
+        .feature:hover, .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: var(--surface-color);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                display: none;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" tabindex="0">☰</div>
+            <ul id="navLinks" role="navigation">
+                <li><a href="#hero" aria-label="Go to home section">Home</a></li>
+                <li><a href="#features" aria-label="Go to features section">Features</a></li>
+                <li><a href="#about" aria-label="Go to about section">About</a></li>
+                <li><a href="#testimonials" aria-label="Go to testimonials section">Testimonials</a></li>
+                <li><a href="#contact" aria-label="Go to contact section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero" tabindex="0">
+        <h1>Stay Organized, Stay Productive</h1>
+        <h2>Transform your tasks into achievements with our intuitive to-do app.</h2>
+        <div class="cta-buttons">
+            <a href="#get-started" role="button" aria-label="Get started for free">Get Started for Free</a>
+            <a href="#learn-more" role="button" aria-label="Learn more about the app">Learn More</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <h3>Features</h3>
+        <div class="features">
+            <div class="feature" tabindex="0" aria-labelledby="feature1">
+                <h4 id="feature1">Task Prioritization</h4>
+                <p>Easily prioritize your tasks with a simple drag-and-drop interface, ensuring that you focus on what matters most.</p>
+            </div>
+            <div class="feature" tabindex="0" aria-labelledby="feature2">
+                <h4 id="feature2">Collaboration Tools</h4>
+                <p>Invite team members to work on shared projects, assign tasks, and communicate seamlessly within the app.</p>
+            </div>
+            <div class="feature" tabindex="0" aria-labelledby="feature3">
+                <h4 id="feature3">Custom Reminders</h4>
+                <p>Never miss a deadline with customizable reminders that keep you on track and accountable.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3>About Our To-Do App</h3>
+        <p>In today's fast-paced world, staying organized is crucial for success. Our to-do app is designed to help individuals and teams streamline their tasks and enhance productivity. With a user-friendly interface and powerful features, you can prioritize your workload, set deadlines, and track your progress effortlessly.</p>
+        <p>Whether you're managing personal projects or collaborating with colleagues, our app adapts to your needs. Join thousands of satisfied users who have transformed their productivity and made task management a breeze.</p>
+    </section>
+
+    <section id="testimonials">
+        <h3>Testimonials</h3>
+        <div class="testimonials">
+            <div class="testimonial" tabindex="0">
+                <p>"This app has completely changed the way I manage my tasks. I feel more organized than ever!"</p>
+                <p><strong>Sarah Johnson</strong>, Project Manager, Tech Solutions Inc.</p>
+            </div>
+            <div class="testimonial" tabindex="0">
+                <p>"The collaboration features have made working with my team so much easier. Highly recommend!"</p>
+                <p><strong>Michael Smith</strong>, Team Lead, Creative Agency</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3>Get in Touch</h3>
+        <p>Have questions or feedback? We'd love to hear from you! Reach out to us and let’s connect.</p>
+    </section>
+
+    <footer>
+        <p>Your tasks, streamlined.</p>
+        <p>&copy; 2023 TaskMaster App. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        menuToggle.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                navLinks.classList.toggle('active');
+            }
+        });
+    </script>
+</body>
+</html>
